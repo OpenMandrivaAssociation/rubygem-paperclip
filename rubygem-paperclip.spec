@@ -7,7 +7,7 @@ Name:		rubygem-%{rbname}
 Version:	2.3.8
 Release:	1
 Group:		Development/Ruby
-License:	GPLv2+ or Ruby
+License:	MIT
 URL:		http://www.thoughtbot.com/projects/paperclip
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
@@ -28,7 +28,7 @@ Documents, RDoc & RI documentation for %{name}.
 %setup -q
 
 %build
-%gem_build -f '(.rb|rails|shoula_macros|test)'
+%gem_build -f '(.rb|LICENSE|rails|shoula_macros|test)'
 
 %install
 rm -rf %{buildroot}
@@ -39,6 +39,7 @@ rm -rf %{buildroot}
 
 %files
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}
+%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
 %{ruby_gemdir}/gems/%{rbname}-%{version}/init.rb
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/generators/
 %{ruby_gemdir}/gems/%{rbname}-%{version}/generators/*
