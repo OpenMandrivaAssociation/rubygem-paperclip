@@ -8,7 +8,7 @@ Version:	2.3.8
 Release:	1
 Group:		Development/Ruby
 License:	MIT
-URL:		http://www.thoughtbot.com/projects/paperclip
+URL:		https://www.thoughtbot.com/projects/paperclip
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildArch:	noarch
